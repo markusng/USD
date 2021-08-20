@@ -150,7 +150,8 @@ Launch the "x64 Native Tools Command Prompt" for your version of Visual Studio
 and run the script in the opened shell. Make sure to use the 64-bit (x64) 
 command prompt and not the 32-bit (x86) command prompt.
 
-See https://docs.microsoft.com/en-us/cpp/build/how-to-enable-a-64-bit-visual-cpp-toolset-on-the-command-line for more details.
+In the command prompt, make sure the path and environment variables that enable a particular build architecture. See https://docs.microsoft.com/en-us/cpp/build/how-to-enable-a-64-bit-visual-cpp-toolset-on-the-command-line for more details.
+Hinted in the link is the requirement to set the environment via running the vcvarsall.bat. For example VS2017 Community Edition, located in C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Auxiliary\Build\. 
 
 For example, the following will download, build, and install USD's dependencies,
 then build and install USD into ```C:\Program Files\USD```.
